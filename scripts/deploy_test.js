@@ -1,5 +1,5 @@
 const hre = require('hardhat')
-
+const ROUTER = process.env.SWAP_ROUTER
 const ver = async function verifyContracts(address, arguments) {
     await hre
         .run('verify:verify', {
@@ -12,7 +12,6 @@ const ver = async function verifyContracts(address, arguments) {
 async function main() {
     const [deployer] = await hre.ethers.getSigners();
     const Contract = await hre.ethers.getContractFactory('ERC20Swapper');
-    const ROUTER = "0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3";
     let contract = await Contract.deploy(
         ROUTER
     );
