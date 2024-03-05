@@ -2,9 +2,8 @@ const { TASK_COMPILE_SOLIDITY_GET_SOURCE_PATHS } = require("hardhat/builtin-task
 const path = require("path");
 require('@nomiclabs/hardhat-waffle')
 require('@openzeppelin/hardhat-upgrades');
-require('dotenv').config()
-require('@nomiclabs/hardhat-etherscan')
-
+require('dotenv').config();
+require('@nomiclabs/hardhat-ethers');
 const BSC_PRIVATE_KEY = process.env.BSC_PRIVATE_KEY || '0x0000000000000000000000000000000000000000000000000000000000000001'
 const BSCSCANAPIKEY_API_KEY = process.env.BSCSCANAPIKEY_API_KEY || ''
 const BSC_TESTNET = process.env.BSC_TESTNET || 'https://bsc-testnet.public.blastapi.io'
@@ -59,7 +58,7 @@ module.exports = {
         },
       },
       {
-        version: '0.8.15',
+        version: '0.8.20',
         settings: {
           optimizer: {
             enabled: true,
