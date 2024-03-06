@@ -24,12 +24,15 @@ Run the deployment script with:
 npx hardhat run scripts\deploy_swapper.js --network <network>
 Replace <network> with the network you intend to deploy to, such as mainnet, testnet.
 
-#Aditional functionality 
+# Aditional functionality 
 Deploy Proxy 
 npx hardhat run scripts\deploy_swapper_upgradeable.js --network <network> 
 npx hardhat verify --network test<network>net address oj implementation 
 
 
-#AddresAlocation
-https://testnet.bscscan.com/address/0x3F33c831Dd48b08101363D7d105A54AD6Ac31b18 ERC20Swapper
-https://testnet.bscscan.com/address/0x2A19eBF5A48615e9345E0A68849a2Bf7762A43bC ERC20SwapperUpgradeable
+# AddresAlocation
+# ERC20Swapper
+https://testnet.bscscan.com/address/0x3F33c831Dd48b08101363D7d105A54AD6Ac31b18 
+
+# ERC20SwapperUpgradeable
+https://testnet.bscscan.com/address/0x2A19eBF5A48615e9345E0A68849a2Bf7762A43bC 
